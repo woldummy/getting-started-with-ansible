@@ -1,9 +1,6 @@
 # Test we can logon to 'hosts' and execute python with json lib.
 # ansible hosts -m ansible.builtin.ping
 ---
-- name: Change ssh port to 2222
-  set_fact:
-    ansible_port: 2222
 - name: connectivity check
   hosts: all
   tasks:
