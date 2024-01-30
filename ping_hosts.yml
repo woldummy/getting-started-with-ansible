@@ -2,4 +2,4 @@
 # ansible hosts -m ansible.builtin.ping
 ---
 - name: Ping the hosts
-  ansible.builtin.ping:
+  ping:
