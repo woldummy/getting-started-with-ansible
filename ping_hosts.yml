@@ -1,5 +1,8 @@
 # Test we can logon to 'hosts' and execute python with json lib.
 # ansible hosts -m ansible.builtin.ping
 ---
-- name: Ping the hosts
-  ping:
+- name: connectivity check
+  hosts: all
+  tasks:
+  - name: ping check
+    ping:
